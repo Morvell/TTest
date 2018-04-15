@@ -10,9 +10,12 @@ class Main {
 
     ConnectivitySearcher connectivitySearcher = new ConnectivitySearcher();
 
+
+    // Простите что не написал тесты. Нет особо на это времени
     int[][] arr = {{1, 1, 0, 1, 1, 0, 0, 1, 1, 1},
-        {1, 1, 0, 1, 0, 0, 0, 0, 1, 0},
-        {0, 1, 0, 1, 0, 0, 0, 0, 0, 0}};
+                   {1, 1, 0, 1, 0, 0, 0, 0, 1, 0},
+                   {0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+                   {0, 1, 0, 1, 0, 0, 1, 1, 0, 0}};
 
     HashMap<Integer, ArrayList<Graph<Pair<Integer, Integer>, DefaultEdge>>> conarr = connectivitySearcher
         .connectivitySearch(arr);
